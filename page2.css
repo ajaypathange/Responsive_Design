@@ -1,0 +1,114 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+/* navbar style start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dd2d4a;
+  /* font-size: 22px; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+
+  position: fixed;
+  color: white;
+  width: 100%;
+  align-items: center;
+}
+.navbar > .nav-brand {
+  font-weight: 700;
+  font-size: 1.563rem;
+}
+.navbar > .nav-link {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+/* navbar style ends */
+/* MAIN section starts */
+.main-section {
+  padding-top: 1.8rem;
+  background-image: url("./norway.jpg");
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+}
+.main-section > #main-sec-heading {
+  font-family: "Noto Serif", serif;
+  font-size: 3rem;
+  text-align: center;
+  /* color: white; */
+  background: -webkit-linear-gradient(rgb(161, 163, 187), blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-section > #main-sec-heading > span {
+  background: -webkit-linear-gradient(rgb(200, 207, 18), rgb(134, 10, 184));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-section > #main-para {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  text-align: center;
+  color: white;
+}
+/* MAIN section ends */
+/* Travel section starts */
+.travel-section {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.travel-section > #travel-item {
+  width: 20%;
+}
+#img-count > img {
+  height: 12.5rem;
+}
+#travel-title > h4 {
+  font-family: "Noto Serif", serif;
+  font-size: 1rem;
+  text-align: center;
+}
+#travel-desc > p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+/* Travel Section Ends */
+
+/* Media Queries for responsive design */
+@media screen and (max-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar > .nav-link {
+    display: block;
+    text-align: right;
+  }
+  .main-section {
+    display: relative;
+  }
+  .main-section > #main-sec-heading {
+    font-size: 2.5rem;
+  }
+  .main-section > #main-para {
+    font-size: 1rem;
+  }
+  .travel-section {
+    width: 50%;
+    grid-template-columns: auto;
+  }
+}
+/* Media Queries for responsive design */
